@@ -16,7 +16,7 @@ public class SimplePromptController {
     }
 
     @GetMapping("/simple")
-    public  String simple(@RequestParam(defaultValue = "Tell me dada jokes") String userInput){
+    public  String simple(@RequestParam(defaultValue = "Tell me dad jokes") String userInput){
         return chatClient.prompt()
                 .user(userInput)
                 .call()
